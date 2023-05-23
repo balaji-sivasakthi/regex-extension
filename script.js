@@ -1,6 +1,3 @@
-document.getElementById('events',()=>{
+document.addEventListener('DOMContentLoaded',()=>{
    
-})
-document.getElementById('annoucements',()=>{
-    
-})
+},true);

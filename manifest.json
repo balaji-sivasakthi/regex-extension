@@ -2,14 +2,18 @@
     "name": "Regex Club",
     "version": "1.0.0",
     "description": "Regex club",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "author": "Balaji Sivasakthi",
-    "browser_action":{
+    "action":{
         "default_popup" : "index.html",
-        "default_icon":"logo.png",
+        "default_icon":"/assets/logo.png",
         "default_title": "Regex club"
     },
     "icons":{
-      "128":"logo.png"
+      "128":"/assets/logo.png"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
     }
 }

@@ -1,41 +1,117 @@
-
-body {
-    width: 500px;
-    height: 600px;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+body{
+    width: 350px;
+    max-height: 600px;
+    font-family: 'Manrope', sans-serif;
 }
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
+body::-webkit-scrollbar{
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+}
+.regex__tab {
+    display: flex;
+}
+.regex__tab__item {
+    outline: none;
+    background:rgba(48, 49, 51, 0.1);
+    border-width:0px;
+    color: rgb(28, 0, 70);
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 5px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+.regex__tab__item:hover {
+    background-color: rgba(46, 46, 74, 0.788);
+    color: white;
+}
+
+.active {
+    background:#303133;
+    color: white;
+}
+
+.active:hover {
+    background-color: rgba(46, 46, 74, 0.788);
+    color: white;
+}
+#regex_event_tab_panel{
+    display: none;
+    margin-top: 5px;
+    width: 100%;
+    height: 330px;
+}
+.regex_event_card{
+    display:flex;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background: #FFFFFF;
+    border: 1px solid rgba(48, 49, 51, 0.25);
+    border-radius: 5px;
+}
+.regex_event_card_img{
+    margin-right:10px;
+    align-items:center;
+    justify-content:center;
+}
+.regex_event_card_desc > div{
+    margin-bottom:5px;
+}
+
+.regex_event_card a{
+    display:block;
+    color:#2245FF;
+    font-weight:700;
+    text-align:right;
+    text-decoration:none;
+}
+.regex_event_card a::after{
+    content:"->"
+}
+.regex_pagination{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.regex_pagination>button{
+    width:50px;
+    height:50px;
+
+}
+.regex_footer{
+    text-align:center;
+}
+
+.regex_footer_logo{
+    font-weight:900;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+.scrollbar
+{
+	overflow-y: scroll;
+}
+.style-4::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.style-4::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #F5F5F5;
+}
+
+.style-4::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
 }
