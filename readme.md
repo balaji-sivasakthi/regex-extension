@@ -1,2 +1,2 @@
 # Regex Notification Manager
-Regex Extension is chrome extension for the people who 
+Regex extension is used to notify the students about upcoming events and announcements in SNS College of Technology.
