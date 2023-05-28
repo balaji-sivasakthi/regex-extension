@@ -1,11 +1,11 @@
 {
-  "name": "chrome-extension-boilerplate-react-vite",
+  "name": "regex-extension",
   "version": "0.0.1",
-  "description": "chrome extension boilerplate",
+  "description": "chrome regex web extension",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite.git"
+    "url": "https://github.com/balaji-sivasakthi/regex-extension"
   },
   "scripts": {
     "build": "tsc --noEmit && vite build",
