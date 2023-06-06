@@ -15,6 +15,7 @@ const manifest: chrome.runtime.ManifestV3 = {
   icons: {
     "128": "icon-128.png",
   },
+  permissions:['notifications'],
   background: {
     service_worker: 'src/pages/background/index.js',
     type: 'module',
