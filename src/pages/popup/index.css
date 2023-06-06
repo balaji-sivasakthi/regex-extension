@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
 *{
     font-family: 'Manrope', sans-serif;
+    box-sizing:border-box;
 }
+
+
 .regex_container{
     width:400px;
     height:600px;
@@ -37,7 +40,8 @@
     background: #FFFFFF;
     border: 1px solid rgba(48, 49, 51, 0.25);
     border-radius: 4px;
-    margin: 20px 0px
+    margin: 20px 0px;
+    padding:5px;
 }
 
 .regex_detail{
