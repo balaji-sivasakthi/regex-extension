@@ -15,6 +15,10 @@ const manifest: chrome.runtime.ManifestV3 = {
   icons: {
     "128": "icon-128.png",
   },
+  background: {
+    service_worker: 'src/pages/background/index.js',
+    type: 'module',
+  },
   web_accessible_resources: [
     {
       resources: [
