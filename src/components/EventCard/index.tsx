@@ -9,7 +9,7 @@ function EventCard({title, description, image, link}) {
       <div className="regex_detail">
         <h1>{title}</h1>
         <p>{description}</p>
-        <a href={link}>Register Now</a>
+        <a href={link}>Register Now ➡️</a>
       </div>
     </div>
   );

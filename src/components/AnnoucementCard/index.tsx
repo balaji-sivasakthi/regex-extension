@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
-function AnnouncementCard() {
+function Annoucement({title, description}) {
   return (
-    <div></div>
-  )
+    <div className="regex_event_card">
+      <div className="regex_detail">
+        <h1>{title}</h1>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
 }
 
-export default AnnouncementCard
+export default Annoucement;

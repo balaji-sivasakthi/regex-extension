@@ -5,27 +5,57 @@ import Tabs from "@src/components/Tabs";
 import Tab from "@src/components/Tab";
 import TabPanel from "@src/components/TabPanel";
 import thumbnail from './../../assets/img/thumbnail.png'
+import Annoucement from "@src/components/AnnoucementCard";
+import Footer from "@src/components/Footer";
 const Popup = () => {
   const [isSelect, setisSelect] = useState(true);
   const data = {
     events: [
       {
         id: "1223ad",
-        title: "Event Title 1",
+        title: "Event title",
         description: "Description of the above mentioned event goes here and it should be in 2 line",
         image: thumbnail,
         link: "",
       },
       {
         id: "1223ad",
-        title: "Event Title 1",
+        title: "Event title",
         description: "Description of the above mentioned event goes here and it should be in 2 line",
         image: thumbnail,
         link: "",
       },
       {
         id: "1223ad",
-        title: "Event Title 1",
+        title: "Event title",
+        description: "Description of the above mentioned event goes here and it should be in 2 line",
+        image: thumbnail,
+        link: "",
+      },
+      {
+        id: "1223ad",
+        title: "Event title",
+        description: "Description of the above mentioned event goes here and it should be in 2 line",
+        image: thumbnail,
+        link: "",
+      },
+      {
+        id: "1223ad",
+        title: "Event title",
+        description: "Description of the above mentioned event goes here and it should be in 2 line",
+        image: thumbnail,
+        link: "",
+      },
+      {
+        id: "1223ad",
+        title: "Event title",
+        description: "Description of the above mentioned event goes here and it should be in 2 line",
+        image: thumbnail,
+        link: "",
+      },
+      {
+        id: "1223ad",
+        title: "Event title",
         description: "Description of the above mentioned event goes here and it should be in 2 line",
         image: thumbnail,
         link: "",
@@ -53,7 +83,15 @@ const Popup = () => {
           />
         ))}
       </TabPanel>
-      <TabPanel active={!isSelect}>Annoucement card</TabPanel>
+      <TabPanel active={!isSelect}>
+      {data?.events.map((event) => (
+          <Annoucement
+            title={event.title}
+            description={event.description}           
+          />
+        ))}
+      </TabPanel>
+      <Footer/>
     </div>
   );
 };

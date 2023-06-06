@@ -1,62 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
-*{
-    font-family: 'Manrope', sans-serif;
-    box-sizing:border-box;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
 }
 
-
-.regex_container{
-    width:400px;
-    height:600px;
+.regex_container {
+  width: 400px;
+  height: 600px;
 }
-.regex_tabs{
-    width:100%;
-    display:flex;
-    justify-content:space-between;
+.regex_tabs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.regex_tab{
-    padding:15px;
-    width:190px;
-    font-weight:700;
-    font-style: normal;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor:pointer;
-    background: rgba(48, 49, 51, 0.1);
-    color:#303133;
-    outline:none;
-    border-width:0px;
+.regex_tab {
+  padding: 15px;
+  width: 190px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: rgba(48, 49, 51, 0.1);
+  color: #303133;
+  outline: none;
+  border-width: 0px;
 }
-.regex_tab_panel{
-
+.regex_tab_panel {
 }
-.active{
-    background-color: #303133;
-    color:#fff;
+.active {
+  background-color: #303133;
+  color: #fff;
 }
-.regex_event_card{
-    width:100%;
-    display:flex;
-    background: #FFFFFF;
-    border: 1px solid rgba(48, 49, 51, 0.25);
-    border-radius: 4px;
-    margin: 20px 0px;
-    padding:5px;
+.regex_event_card {
+  width: 100%;
+  display: flex;
+  background: #ffffff;
+  border: 1px solid rgba(48, 49, 51, 0.25);
+  border-radius: 4px;
+  margin: 20px 0px;
+  padding: 5px;
 }
 
-.regex_detail{
-    margin-left:10px;
+.regex_detail {
+  margin-left: 15px;
 }
 
-.regex_detail h1{
-    margin:0px;
+.regex_detail h1 {
+  margin: 5px 0px;
 }
 
-.regex_detail p{
-    margin:0px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    color: rgba(0, 0, 0, 0.5);
+.regex_detail p {
+  margin: 5px 0px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.regex_detail a {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2245ff;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.regex_footer span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.regex_footer .logo_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regex_footer .logo_group span {
+  padding:10px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration-line: underline;
+  color: #000000;
 }
