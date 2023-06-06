@@ -21,6 +21,7 @@ Regex extension is used to notify the students about upcoming events and announc
 > The focus was on improving the build speed and development experience with Vite.
 
 ## Features <a name="features"></a>
+  ![image](https://github.com/balaji-sivasakthi/regex-extension/blob/dd8baf4045d776e5d9a7ceecbf4a389dd65cceab/images/screen_shot.png)
   - Events
   - Announcements
 
