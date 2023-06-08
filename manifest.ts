@@ -5,7 +5,7 @@ import packageJson from "./package.json";
  */
 const manifest: chrome.runtime.ManifestV3 = {
   manifest_version: 3,
-  name: "Regex Club Extension",
+  name: packageJson.alias,
   version: packageJson.version,
   description: packageJson.description,
   action: {

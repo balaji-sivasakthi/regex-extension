@@ -4,12 +4,12 @@ function EventCard({title, description, image, link}) {
   return (
     <div className="regex_event_card">
       <div className="regex_img">
-        <img src={image} alt="" />
+        <img width={100} height={100} src={image} alt="" />
       </div>
       <div className="regex_detail">
         <h1>{title}</h1>
         <p>{description}</p>
-        <a href={link}>Register Now ➡️</a>
+        <a target="_blank" href={link}>Register Now ➡️</a>
       </div>
     </div>
   );

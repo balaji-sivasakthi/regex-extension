@@ -1,7 +1,8 @@
 {
   "name": "regex-extension",
+  "alias": "Regex Club",
   "version": "0.0.1",
-  "description": "chrome regex web extension",
+  "description": "Regex extension is used to notify the students about upcoming events and announcements in SNS College of Technology.",
   "license": "MIT",
   "repository": {
     "type": "git",
