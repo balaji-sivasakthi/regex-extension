@@ -14,7 +14,6 @@
 - [Intro ](#intro-)
 - [Features ](#features-)
 - [Installation ](#installation-)
-  - [Procedures ](#procedures-)
 - [Thank you for contributors ✨](#thank-you-for-contributors-)
 
 ## Intro <a name="intro"></a>
@@ -31,8 +30,6 @@ Regex extension is used to notify the students about upcoming events and announc
 - Announcements
 
 ## Installation <a name="installation"></a>
-
-### Procedures <a name="procedures"></a>
 
 1. Clone this repository.
 2. Run `yarn install` or `npm i` (check your node version >= 16.6, recommended >= 18)
