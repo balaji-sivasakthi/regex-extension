@@ -21,16 +21,17 @@
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
-  background: rgba(48, 49, 51, 0.1);
-  color: #303133;
+  background-color: #303133;
+  color: #fff;
   outline: none;
   border-width: 0px;
 }
 .regex_tab_panel {
 }
 .active {
-  background-color: #303133;
-  color: #fff;
+  background: rgba(48, 49, 51, 0.1);
+  color: #303133;
+ 
 }
 .regex_event_card {
   width: 100%;

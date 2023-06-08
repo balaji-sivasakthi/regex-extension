@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "@assets/img/logo.svg";
 import EventCard from "@src/components/EventCard";
 import Tabs from "@src/components/Tabs";
@@ -7,62 +7,29 @@ import TabPanel from "@src/components/TabPanel";
 import thumbnail from './../../assets/img/thumbnail.png'
 import Annoucement from "@src/components/AnnoucementCard";
 import Footer from "@src/components/Footer";
+import { db, msg } from "@src/firebase/config";
+import { collection, doc, getDoc, getDocs } from "firebase/firestore"; 
 const Popup = () => {
   const [isSelect, setisSelect] = useState(true);
-  const data = {
-    events: [
-      {
-        id: "1223ad",
-        title: "Event title",
-        description: "Description of the above mentioned event goes here and it should be in 2 line",
-        image: thumbnail,
-        link: "",
-      },
-      {
-        id: "1223ad",
-        title: "Event title",
-        description: "Description of the above mentioned event goes here and it should be in 2 line",
-        image: thumbnail,
-        link: "",
-      },
-      {
-        id: "1223ad",
-        title: "Event title",
-        description: "Description of the above mentioned event goes here and it should be in 2 line",
-        image: thumbnail,
-        link: "",
-      },
-      {
-        id: "1223ad",
-        title: "Event title",
-        description: "Description of the above mentioned event goes here and it should be in 2 line",
-        image: thumbnail,
-        link: "",
-      },
-      {
-        id: "1223ad",
-        title: "Event title",
-        description: "Description of the above mentioned event goes here and it should be in 2 line",
-        image: thumbnail,
-        link: "",
-      },
-      {
-        id: "1223ad",
-        title: "Event title",
-        description: "Description of the above mentioned event goes here and it should be in 2 line",
-        image: thumbnail,
-        link: "",
-      },
-      {
-        id: "1223ad",
-        title: "Event title",
-        description: "Description of the above mentioned event goes here and it should be in 2 line",
-        image: thumbnail,
-        link: "",
-      },
-    ],
-    annoucements: [],
-  };
+  const [events, setevents] = useState([])
+  const [announcements, setannouncements] = useState([])  
+  useEffect(()=>{
+   const fetch = async () => {
+      let events = []
+      let announcements = []
+      const eventSnap = await getDocs(collection(db,'events'))
+      const annoucementSnap = await getDocs(collection(db,'announcements'))
+      annoucementSnap.forEach(data=>{
+        announcements.push({id:data.id,...data.data()})
+      })
+      eventSnap.forEach(data=>{
+        events.push({id:data.id,...data.data()})
+      })
+      setevents(events)
+      setannouncements(announcements)
+   }
+   fetch()
+  },[])
   return (
     <div className="regex_container">
       <Tabs>
@@ -73,8 +40,8 @@ const Popup = () => {
           Announcements 📢
         </Tab>
       </Tabs>
-      <TabPanel active={isSelect}>
-        {data?.events.map((event) => (
+      <TabPanel active={!isSelect}>
+        {events?.map((event) => (
           <EventCard
             title={event.title}
             description={event.description}
@@ -83,8 +50,8 @@ const Popup = () => {
           />
         ))}
       </TabPanel>
-      <TabPanel active={!isSelect}>
-      {data?.events.map((event) => (
+      <TabPanel active={isSelect}>
+      {announcements?.map((event) => (
           <Annoucement
             title={event.title}
             description={event.description}           
