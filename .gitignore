@@ -19,3 +19,7 @@ public/manifest.json
 
 # env
 .env
+
+# bin
+*.crx
+*.pem
