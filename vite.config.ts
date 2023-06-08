@@ -35,6 +35,7 @@ export default defineConfig({
     customDynamicImport(),
     addHmr({ background: enableHmrInBackgroundScript, view: true }),
   ],
+  envPrefix: 'VITE_',
   publicDir,
   build: {
     outDir,
