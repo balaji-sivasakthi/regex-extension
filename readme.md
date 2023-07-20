@@ -1,5 +1,5 @@
 <div align="center">
-<img src="public/icon-128.png" alt="logo"/>
+<img src="https://res.cloudinary.com/dh6gxe3jq/image/upload/v1689867035/icon-128_yc3sv6.png" alt="logo"/>
 <h1> Regex Web Extension</h1>
 
 ![](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
